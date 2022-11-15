@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="add-subject">
+            <h3 class="title">Add Values</h3>
+            <div class="sub-box">
+                <!--SL.No., First Name, Last Name, City,Country-->
+                <input type="text" id="first" name="firstname" value="" placeholder="Enter the firstname" required><br>
+                <input type="text" id="last" name="lastname" value="" placeholder="Enter the lastname" required><br>
+                <input type="text" id="city" name="city" value="" placeholder="Enter the city", required><br>
+                <input type="text" id="countries" name="country" value="" placeholder="Enter the country", required><br>
+
+                <button id="btn1" class="btn" onclick="addToTable()">Add to Table</button>
+
+                <button id="btn1" class="btn" onclick="myFunction()">Add to Table</button>
+            </div>
+        </div>
+
+        <div class="marks-table">
+            <h3 class="title">Details Table</h3>
+      
+            <div class="table-body" >
+                <table border id="myTable">
+                    <thead>
+                        <tr>
+                            <th>S. No</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>City</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <h3 id="no-data">No Data Available...</h3>
+            </div>
+        </div>
+      
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
